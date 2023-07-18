@@ -80,12 +80,16 @@ nav li a {
 
 .banner-content {
     background-image: url('../images/Group\ 14.png');
-    width: 901px;
+    width: 100%;
     height: 700px;
     margin-top: 42px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
-
+.banner-img{
+    width: 80%;
+}
 .banner-content p img {
     width: 24px;
     height: 24px;
@@ -142,6 +146,7 @@ nav li a {
     bottom: 140px;
     right: 100px;
     color: #FFF;
+    cursor: pointer;
 }
 
 .btn-secondary {
@@ -153,7 +158,69 @@ nav li a {
     background: #4EC5F7;
     border: 0px;
     color: #FFF;
+    cursor: pointer;
 }
+
+.purpose-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 30px;
+    margin-top: 81px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+
+.purpose-content {
+    text-align: right;
+}
+
+.btn-more {
+    padding: 15px 28px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: 0px;
+    color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.purpose-container h3 {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    color: #c91fd8;
+    margin-bottom: 10px;
+}
+
+.purpose-details {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.purpose-content p span {
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.purpose-text {
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+
+
+
 
 
 
@@ -168,7 +235,8 @@ nav li a {
 @media screen and (max-width:576px) {
 
     .nav-container,
-    ul,.banner-container {
+    ul,
+    .banner-container {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
@@ -180,45 +248,81 @@ nav li a {
     .nav-banner {
         margin-top: 20%;
     }
-    .banner-container img{
+
+    .banner-container img {
         width: 90%;
     }
-    .banner-content{
+
+    .banner-content {
         width: auto;
         background-size: contain;
+        background-repeat: no-repeat;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column-reverse;
     }
+    .purpose-container{
+        flex-direction: column;
+        width: auto;
+    }
+    .purpose-container img{
+        width: 90%;
+    }
+    .purpose-content,.purpose-details,.purpose-text{
+        text-align: center;
+    }
+    .purpose-content h3{
+        margin-right: 40px;
+    }
+
 
 
 }
 
 /* media query for tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-    .nav-container{
+    .nav-container {
         flex-direction: column;
         align-items: center;
-        margin:30px auto;
+        margin: 30px auto;
         box-shadow: none;
         padding-left: 85px;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: row-reverse;
         width: auto;
         display: block;
         padding-left: 10px;
     }
-    .banner-container img{
+
+    .banner-container img {
         padding-left: 100px;
     }
-    *{
+
+    * {
         width: auto;
     }
-    .banner-content{
+
+    .banner-content {
         padding: 50px;
     }
-    .banner-item{
+
+    .banner-item {
         padding-right: 80px;
+    }
+    .purpose-container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 190%;
+        padding-left: 60px;
+        
+    }
+    .purpose-content,.purpose-details,.purpose-text{
+        text-align: center;
+    }
+    .purpose-content h3{
+        margin-right: 80px;
     }
 }
