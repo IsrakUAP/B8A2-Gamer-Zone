@@ -450,6 +450,75 @@ nav li a {
     height: 80px;
     border: 2px solid red;
     color: #ff1493;
+    cursor: pointer;
+}
+
+.banner-primary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-primary img {
+    width: 85px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+#banner p {
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner-primary p span {
+    color: #ff1493;
+}
+
+.footer-container {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    background: #0B0223;
+    height: 400px;
+    padding: 50px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.footer-icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-icon {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-list {
+    display: flex;
+    gap: 50px;
+    margin: 50px auto;
+}
+
+.footer-terms {
+    display: flex;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.footer-list,
+.footer-terms {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -600,11 +669,43 @@ nav li a {
         font-size: 10px;
         font-weight: 600;
     }
-    .category-container{
+
+    .category-container {
         display: grid;
         grid-template-rows: 50px 50px 50px;
         grid-template-columns: 50px 50px 50px;
-        width: 90%;
+        width: 100%;
+    }
+
+    .category-container div p:hover {
+        height: 70px;
+        width: 130px;
+    }
+
+    .footer-container {
+        width: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        padding-bottom: 300px;
+    }
+
+    .banner-primary {
+        margin-top: 230px;
+    }
+
+    .footer-list,
+    .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-terms{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
 }
@@ -709,5 +810,9 @@ nav li a {
         width: 100%;
         margin-left: 60px;
         grid-column: 10px;
+    }
+
+    .footer-container {
+        width: auto;
     }
 }
