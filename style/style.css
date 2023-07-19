@@ -4,6 +4,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+
 .nav-container {
     height: 130px;
     width: 100%;
@@ -169,6 +170,7 @@ nav li a {
     height: 70vh;
     gap: 30px;
     margin-top: 81px;
+    padding: 20px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 
 }
@@ -220,6 +222,7 @@ nav li a {
 .online-game-container {
     text-align: center;
     padding: 0px 240px;
+
 }
 
 .online-game-title {
@@ -332,7 +335,8 @@ nav li a {
     align-items: center;
     margin: 5px auto;
     gap: 200px;
-    
+    margin: 20px;
+
 
 }
 
@@ -370,6 +374,47 @@ nav li a {
     font-weight: 400;
 }
 
+.careers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF42A5;
+    margin-top: 100px;
+}
+
+.careers-container h3 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.careers-text {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.careers-details {
+    display: flex;
+    justify-content: space-between;
+}
+.careers-details .part-one{
+    text-align: start;
+    color: #FFF;
+}
+.careers-details .part-two{
+    text-align: end;
+    color: #FFF;
+}
+.careers-container button {
+    border-radius: 48px;
+    background: #FFF;
+    padding: 21px 40px;
+    border: 0px;
+    margin-top: 20px;
+}
 
 
 
@@ -479,6 +524,7 @@ nav li a {
     .play-container {
         flex-direction: column;
         width: auto;
+        padding:20px;
     }
 
     .description,
@@ -498,6 +544,16 @@ nav li a {
         margin-top: -300px;
         width: 100px;
         height: 100px;
+    }
+    .careers-container{
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        grid-column: 10px;
+    }
+    .careers-container img{
+        width: 334.833px;
+        height: 250px;
     }
 
 }
@@ -581,17 +637,26 @@ nav li a {
         margin-left: 80px;
         white-space: nowrap;
     }
-    .play-container{
+
+    .play-container {
         flex-direction: column;
-        margin:-2px auto;
+        margin: -2px auto;
         margin-left: 100px;
     }
-    .person-img{
+
+    .person-img {
         margin-top: -150px;
     }
-    .move-img{
+
+    .move-img {
         margin-top: -400px;
         left: 350px;
+    }
+    .careers-container{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 60px;
+        grid-column: 10px;
     }
 
 }
