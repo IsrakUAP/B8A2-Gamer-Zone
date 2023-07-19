@@ -400,20 +400,52 @@ nav li a {
     display: flex;
     justify-content: space-between;
 }
-.careers-details .part-one{
+
+.careers-details .part-one {
     text-align: start;
     color: #FFF;
 }
-.careers-details .part-two{
+
+.careers-details .part-two {
     text-align: end;
     color: #FFF;
 }
+
 .careers-container button {
     border-radius: 48px;
     background: #FFF;
     padding: 21px 40px;
     border: 0px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.category-container div p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.category-container div p:hover {
+    border: 2px solid red;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 5px;
+    color: #FF42A5;
+    cursor: pointer;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 80px;
+    width: 80%;
+    margin: 70px auto;
 }
 
 
@@ -524,7 +556,7 @@ nav li a {
     .play-container {
         flex-direction: column;
         width: auto;
-        padding:20px;
+        padding: 20px;
     }
 
     .description,
@@ -545,17 +577,32 @@ nav li a {
         width: 100px;
         height: 100px;
     }
-    .careers-container{
+
+    .careers-container {
         flex-direction: column;
         width: 90%;
         padding: 20px;
         grid-column: 10px;
     }
-    .careers-container img{
+
+    .careers-container img {
         width: 334.833px;
         height: 250px;
     }
 
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: -10px;
+}
+.category-container div{
+    width: 50px;
+    height: 25px;
+    gap: 3px;
+    
 }
 
 /* media query for tablet or medium devices */
@@ -652,11 +699,15 @@ nav li a {
         margin-top: -400px;
         left: 350px;
     }
-    .careers-container{
+
+    .careers-container {
         flex-direction: column;
         width: 100%;
         margin-left: 60px;
         grid-column: 10px;
+    }
+    .category-container{
+        margin-left: 70px;
     }
 
 }
